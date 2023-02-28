@@ -10,7 +10,7 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 8085
-  type: LoadBalancer
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: Deployment
