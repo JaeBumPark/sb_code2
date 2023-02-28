@@ -9,7 +9,7 @@ pipeline {
     gitName = 'JaeBumPark'
     gitEmail = 'jack29@naver.com'
     gitWebaddress = 'https://github.com/JaeBumPark/sb_code2'
-    gitSshaddress = 'git@github.com/JaeBumPark/sb_code2'
+    gitSshaddress = 'git@github.com:JaeBumPark/sb_code2.git'
     gitCredential = 'git_cre' // github credential 생성시의 ID
     dockerHubRegistry = 'kyontoki/sbimage'
     dockerHubRegistryCredential = 'docker_cre' // // docker credential 생성시의 ID
