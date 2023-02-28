@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: spring
-          image: kyontoki/sbimage:2
+          image: kyontoki/sbimage:9
