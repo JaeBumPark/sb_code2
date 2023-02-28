@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ip-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ipnginx
+  template:
+    metadata:
+      labels:
+        app: ipnginx
+    spec:
+      containers:
+        - name: ipnginx
+          image: pengbai/docker-supermario
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ip-svc
+spec:
+  selector:
+    app: ipnginx
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: NodePort    
+
